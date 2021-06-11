@@ -10,17 +10,15 @@ class FlashChat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData.dark().copyWith(
-          textTheme: TextTheme(
-            body1: TextStyle(color: Colors.black54),
-          ),
-        ),
-        initialRoute: '/',
-        routes: {
-          '/': (ctx) => WelcomeScreen(),
-          ChatScreen.routeName: (ctx) => ChatScreen(),
-          LoginScreen.routeName: (ctx) => LoginScreen(),
-          RegistrationScreen.routeName: (ctx) => RegistrationScreen(),
-        });
+      initialRoute: '/',
+      routes: {
+        '/': (ctx) => WelcomeScreen(),
+        ChatScreen.routeName: (ctx) => ChatScreen(),
+        LoginScreen.routeName: (ctx) => LoginScreen(),
+        RegistrationScreen.routeName: (ctx) => RegistrationScreen(),
+      },
+    );
   }
 }
+
+// Some package need to support animation :rubber, sprung, animated_text_kit,
